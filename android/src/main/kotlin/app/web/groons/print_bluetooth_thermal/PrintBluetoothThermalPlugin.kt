@@ -143,7 +143,7 @@ class PrintBluetoothThermalPlugin: FlutterPlugin, MethodCallHandler {
       }
     }else if (call.method == "writebytes") {
       val lista: List<Int> = call.arguments as List<Int>
-    var bytes: ByteArray = "\n".toByteArray()
+    var bytes: ByteArray = "".toByteArray()
 
     lista.forEach {
         bytes += it.toByte()
